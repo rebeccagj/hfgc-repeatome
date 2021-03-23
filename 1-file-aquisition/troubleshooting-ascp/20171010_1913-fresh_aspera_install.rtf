@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 AndaleMono;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww24440\viewh16820\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \CocoaLigature0 /home/sf040090/software $ wget http://download.asperasoft.com/download/sw/cli/3.7.5/aspera-cli-3.7.5.539.df4398f-linux-64-release.sh\
+--2017-10-10 19:10:06--  http://download.asperasoft.com/download/sw/cli/3.7.5/aspera-cli-3.7.5.539.df4398f-linux-64-release.sh\
+Resolving download.asperasoft.com... 54.176.168.141\
+Connecting to download.asperasoft.com|54.176.168.141|:80... connected.\
+HTTP request sent, awaiting response... 200 OK\
+Length: 9790375 (9.3M) [application/binary]\
+Saving to: `aspera-cli-3.7.5.539.df4398f-linux-64-release.sh'\
+\
+100%[========================================================================================================================================================================>] 9,790,375   3.85M/s   in 2.4s    \
+\
+2017-10-10 19:10:09 (3.85 MB/s) - `aspera-cli-3.7.5.539.df4398f-linux-64-release.sh' saved [9790375/9790375]\
+/home/sf040090/software $ chmod +x aspera-cli-3.7.5.539.df4398f-linux-64-release.sh \
+/home/sf040090/software $ ./aspera-cli-3.7.5.539.df4398f-linux-64-release.sh \
+\
+Installing IBM Aspera CLI\
+\
+Installation into /home/sf040090/.aspera/cli successful\
+\
+Optional installation steps:\
+\
+  To install the product in your PATH, run the following command:\
+    export PATH=/home/sf040090/.aspera/cli/bin:$PATH\
+\
+  To install the man page, run the following command:\
+    export MANPATH=/home/sf040090/.aspera/cli/share/man:$MANPATH\
+\
+/home/sf040090/software $ export PATH=/home/sf040090/.aspera/cli/bin:$PATH\
+/home/sf040090/software $ ascp -QT -l 300m -L- -P33001 -i /home/sf040090/.aspera/cli/etc/asperaweb_id_dsa.openssh era-fasp@fasp.sra.ebi.ac.uk:/vol1/fastq/SRR419/005/SRR4199345/SRR4199345_1.fastq.gz /home/sf040090\
+LOG Aspera CLI version 3.7.5.539.df4398f\
+\
+LOG Alternate log directory: "-"\
+LOG Configuration: using v2 configuration file "/home/sf040090/.aspera/cli/etc/aspera.conf", user -\
+LOG Initializing FASP version 3.7.4.147133, license max rate=(unlimited), account no.=1, license no.=1 product=6\
+LOG Configured symlink actions: create=1, follow=1, follow_wide=0, skip=0\
+LOG (access key) Not present\
+LOG [asssh] remote host-key fingerprint 3eb78b35f5a01fdf131b20255d689196dcae1efa\
+LOG [asssh] authentication succeeded, proceeding.\
+LOG AUTH [CLIENT] op=receive auth_method=client_full_access sess_auth=pass sess_root=unset access_key=NONE remote_user=era-fasp remote_host=fasp.sra.ebi.ac.uk system_user=sf040090 token=- storage=(no docroot)\
+LOG Xattrs-preserving modes for starters: --preserve-xattrs=none, --remote-preserve-xattrs=none; --preserve-acls=none, --remote-preserve-acls=none\
+LOG Peer doesn't support allowed cipher negotiation above aes-128\
+ERR FASP Session Peer Error id=1ad2bd35-ecc5-430a-a161-b05c736507ce (error 63, Transport endpoint is not connected)\
+ERR Server aborted session: Transport endpoint is not connected\
+ERR Session initialization failure: Server aborted session: Transport endpoint is not connected (63)\
+ERR FASP receiver had error, errcode 63 errstr [Server aborted session: Transport endpoint is not connected]\
+ERR Peer FASP sender had error, errcode 63 errstr [Transport endpoint is not connected]\
+LOG FASP Session Start uuid=1ad2bd35-ecc5-430a-a161-b05c736507ce op=recv status=failed errcode=63 errstr="Source path stat failed" source=/vol1/fastq/SRR419/005/SRR4199345/SRR4199345_1.fastq.gz dest=/home/sf040090 source_prefix=- local=169.230.134.141:55310 peer=193.62.193.135:33001 tcp_port=33001 os="Linux 2.6.32-504.12.2.el6.664g0000.x86_6" ver=3.7.4.147133 lic=6:1:1 peeros="Linux 3.10.0-514.21.1.el7.x86_64 #1 SMP " peerver=3.7.2.137926 peerlic=10:353:16565 proto_sess=20003 proto_udp=20000 proto_bwmeas=20000 proto_data=2000d\
+LOG FASP Session Params uuid=1ad2bd35-ecc5-430a-a161-b05c736507ce userid=0 user="era-fasp" targetrate=300000000 minrate=0 rate_policy=fair cipher=none resume=0 create=0 ovr=1 times=0 precalc=no mf=0 mf_path=- mf_suffix=.aspera-inprogress partial_file_suffix=- files_encrypt=no files_decrypt=no file_csum=NONE dgram_sz=0 prepostcmd=- tcp_mode=no rtt_auto=yes cookie="-" vl_proto_ver=1  peer_vl_proto_ver=1 vl_local=0 vlink_remote=0 vl_sess_id=0 srcbase=- rd_sz=0 wr_sz=0 cluster_num_nodes=1 cluster_node_id=0 cluster_multi_session_threshold=-1 range=0-0 keepalive=no test_login=no proxy_ip=- net_rc_alg=alg_delay exclude_older/newer_than=0/0\
+\
+Session Stop  (Error: Server aborted session: Transport endpoint is not connected)\
+LOG FASP Session Stop uuid=1ad2bd35-ecc5-430a-a161-b05c736507ce op=recv status=failed errcode=63 errstr="Source path stat failed" source=/vol1/fastq/SRR419/005/SRR4199345/SRR4199345_1.fastq.gz dest=/home/sf040090 source_prefix=- local=169.230.134.141:55310 peer=193.62.193.135:33001 tcp_port=33001 os="Linux 2.6.32-504.12.2.el6.664g0000.x86_6" ver=3.7.4.147133 lic=6:1:1 peeros="Linux 3.10.0-514.21.1.el7.x86_64 #1 SMP " peerver=3.7.2.137926 peerlic=10:353:16565 proto_sess=20003 proto_udp=20000 proto_bwmeas=20000 proto_data=2000d\
+LOG FASP Session Params uuid=1ad2bd35-ecc5-430a-a161-b05c736507ce userid=0 user="era-fasp" targetrate=300000000 minrate=0 rate_policy=fair cipher=none resume=0 create=0 ovr=1 times=0 precalc=no mf=0 mf_path=- mf_suffix=.aspera-inprogress partial_file_suffix=- files_encrypt=no files_decrypt=no file_csum=NONE dgram_sz=0 prepostcmd=- tcp_mode=no rtt_auto=yes cookie="-" vl_proto_ver=1  peer_vl_proto_ver=1 vl_local=0 vlink_remote=0 vl_sess_id=0 srcbase=- rd_sz=0 wr_sz=0 cluster_num_nodes=1 cluster_node_id=0 cluster_multi_session_threshold=-1 range=0-0 keepalive=no test_login=no proxy_ip=- net_rc_alg=alg_delay exclude_older/newer_than=0/0\
+LOG FASP Session Statistics [Receiver] id=1ad2bd35-ecc5-430a-a161-b05c736507ce delay=0ms rex_delay=0ms ooo_delay=0ms solicited_rex=0.00% rcvd_rex=0.00% rcvd_dups=0.00% ave_xmit_rate 0.00Kbps effective=0.00% effective_rate=0.00Kbps (detail: good_blks 0 bl_total 0 bl_orig 0 bl_rex 0 dup_blks 0 dup_last_blks 0 drop_blks_xnf 0) (sndr ctl: sent 0 rcvd 0 lost 0 lost 0.00%) (rcvr ctl: sent 0 rcvd 0 lost 0 lost 0.00%) (rex  ctl: sent 0 rcvd 0 lost 0 lost 0.00%) (progress: tx_bytes 0 file_bytes 0 tx_time 0) rex_xmit_blks 0  xmit_total 0 rex_xmit_pct 0.00%\
+LOG ======= File Transfer statistics =======\
+LOG ------- Source statistics -------\
+LOG Source argument scans attempted             :          0\
+LOG - Source argument scans completed           :          0\
+LOG Source path scans attempted                 :          0\
+LOG - Source path scans failed                  :          0\
+LOG - Source path scans skipped since irregular :          0\
+LOG - Source path scans excluded                :          0\
+LOG - Source directory scans completed          :          0\
+LOG - Source file scans completed               :          0\
+LOG Source directory creates attempted          :          0\
+LOG - Source directory creates failed           :          0\
+LOG - Source directory created or existed       :          0\
+LOG Source file transfers attempted             :          0\
+LOG - Source file transfers failed              :          0\
+LOG - Source file transfers passed              :          0\
+LOG - Source file transfers skipped             :          0\
+LOG Source bytes transferred                    :          0\
+LOG ======= end File Transfer statistics =======}

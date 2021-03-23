@@ -1,0 +1,11 @@
+#!/bin/sh
+# Set the job name
+#PBS -N 20171010-ascp_fastq
+#PBS -l nodes=1:ppn=12,vmem=64gb
+#PBS -M rgjzak@gmail.com
+# Run my job
+
+cd /home/sf040090/Li-2017-hFGC/fastq
+
+# on server
+for SAMPLE in $(cat /home/sf040090/20171010-ascp-PRJNA340388-links.txt); do ascp -QT -k2 -l 300m -P33001 -i /home/sf040090/.aspera/cli/etc/asperaweb_id_dsa.openssh $SAMPLE /home/sf040090/Li-2017-hFGC/fastq; done
