@@ -1,0 +1,7 @@
+This analysis was a part of a collaborative effort published here: https://dev.biologists.org/content/146/12/dev171157
+
+# ABSTRACT
+Epigenetic resetting in germ cells during development de-represses transposable elements (TEs). piRNAs protect fetal germ cells by targeted mRNA destruction and deposition of repressive epigenetic marks. Here, we provide the first evidence for an active piRNA pathway and TE repression in germ cells of human fetal testis. We identify pre-pachytene piRNAs with features of secondary amplification that map most abundantly to the long interspersed element type 1 (L1) family of TEs. L1-ORF1p expression is heterogeneous in fetal germ cells, peaks at mid-gestation and declines concomitantly with increases in piRNAs, nuclear localization of HIWI2 and an increase in H3K9me3. Surprisingly, the same cells with accumulation of L1-ORF1p display highest levels of HIWI2 and H3K9me3. Conversely, the earliest germ cells with high levels of L1-ORF1p express low levels of the chaperone HSP90α. We propose that a subset of germ cells resists L1 expression, whereas L1-expressing germ cells activate the repression pathway that leads to epigenetic silencing of L1 via H3K9me3.
+
+# AUTHORS
+Boris Reznik, Steven A. Cincotta, Rebecca G. Jaszczak, Leslie J. Mateo, Joel Shen, Mei Cao, Laurence Baskin, Ping Ye, Wenfeng An, Diana J. Laird
