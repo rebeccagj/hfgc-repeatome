@@ -1,0 +1,18 @@
+gunzip SRR41993?_?.fastq.gz
+
+# attempt one to remove 
+# a files are ones that have length=150 removed
+# https://stackoverflow.com/questions/28567685/use-zcat-and-sed-or-awk-to-edit-compressed-gz-text-file
+sed 's/\<length=150\>//g' SRR4199328_1.fastq > SRR4199328_1a.fastq
+sed 's/\<length=150\>//g' SRR4199328_2.fastq > SRR4199328_2a.fastq
+sed 's/\<length=150\>//g' SRR4199329_1.fastq > SRR4199329_1a.fastq
+sed 's/\<length=150\>//g' SRR4199329_2.fastq > SRR4199329_2a.fastq
+sed 's/\<length=150\>//g' SRR4199330_1.fastq > SRR4199330_1a.fastq
+sed 's/\<length=150\>//g' SRR4199330_2.fastq > SRR4199330_2a.fastq
+
+# b files are ones that have the last 5 characters removed 
+sed '1~2s/..$//g' test.fastq > test1.fastq
+
+# issues with numbering from the right due to increasing digits
+
+cat SRR4199330_1.fastq | awk '{print $1}' | sed '1~2s/..$//g' > SRR4199330_1p.fastq

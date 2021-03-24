@@ -1,0 +1,11 @@
+
+EXITING: fatal error trying to allocate genome arrays, exception thrown: std::bad_alloc
+Possible cause 1: not enough RAM. Check if you have enough RAM 49496831129 bytes
+Possible cause 2: not enough virtual memory allowed with ulimit. SOLUTION: run ulimit -v 49496831129
+
+Feb 07 18:26:23 ...... FATAL ERROR, exiting
+mv: cannot stat `/scratch/sf040090/19Wextract': No such file or directory
+
+gzip: stdout: Broken pipe
+
+gzip: stdout: Broken pipe

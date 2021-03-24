@@ -1,0 +1,31 @@
+/home/sf040090/software/STAR-2.5.3a/bin/Linux_x86_64/STAR --runThreadN 4 \
+     --genomeDir /home/sf040090/Li-2017-hFGC/UCSC-hg38_rpandtxs-150overhang \
+     --readFilesIn /home/sf040090/25_1_extracted.fastq.gz /home/sf040090/25_2_extracted.fastq.gz \
+     --readFilesCommand zcat \
+     --outFilterMultimapNmax 100 \
+     --winAnchorMultimapNmax 100 \
+     --outSAMmultNmax 100 \
+     --outFilterMismatchNmax 3 \
+     --outSAMtype BAM SortedByCoordinate;
+
+# readFilesIn [read1] [read2] 
+# readFilesCommand 
+# outFilterMultimapNmax 100 = all alignments are output only if the read maps to no more loci than this value (default is 10)
+# winAnchorMultimapNmax 100 = max number of loci anchors are allowed to map to (default is 50)
+# outSAMmultNmax 100 = limits the number of output alignments (SAM lines) for multimappers (default is -1)
+# outFilterMismatchNmax 3 = maximum number of mismatches per pair,  large number switches off this filter
+# outSAMtype BAM SortedByCoordinate = output sorted by coordinate Aligned.sortedByCoord.out.bam file
+# outFilterMultimapNmax 1 = will only output alignments that map to one locus only thus kicking out the reads I'm interested in
+
+# https://academic.oup.com/bioinformatics/article/31/22/3593/240793 map reads with maximum multiple alignments of no more than 100, using the variables –winAnchorMultimapNmax 100 and –outFilterMultimapNmax 100
+
+# Ge BMC Genomics (2017) 18:200 
+# –outFilterMultimapNmax 100
+# –winAnchorMultimapNmax 100
+# –outSAMmultNmax 100 
+# –outSAMtype BAM SortedByCoordinate
+# –outFilterMismatchNmax 3
+
+mv /scratch/sf040090/19Wextract /home/sf040090
+
+

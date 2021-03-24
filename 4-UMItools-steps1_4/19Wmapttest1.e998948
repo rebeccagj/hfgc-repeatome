@@ -1,0 +1,2 @@
+mkdir: cannot create directory `/scratch/sf040090/19Wmap': File exists
+mv: cannot stat `/scratch/sf040090/19Wextract': No such file or directory
