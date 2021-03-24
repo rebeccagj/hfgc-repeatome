@@ -1,0 +1,63 @@
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/UCSChg38-rpandtxs.gtf -o 27_genes_assigned -R BAM 27_aligned.sortedbycoord.f2.bam -T 8 -MOp
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v1.6.0
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 SAM file                                       ||
+||                           P 27_aligned.sortedbycoord.f2.bam                ||
+||                                                                            ||
+||             Output file : 27_genes_assigned                                ||
+||                 Summary : 27_genes_assigned.summary                        ||
+||              Annotation : /home/sf040090/Li-2017-hFGC/genomefiles/UCSC ... ||
+||      Assignment details : <input_file>.featureCounts.bam                   ||
+||                      (Note that files are saved to the output directory)   ||
+||                                                                            ||
+||      Dir for temp files : ./                                               ||
+||                                                                            ||
+||                 Threads : 8                                                ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : yes                                              ||
+||         Strand specific : no                                               ||
+||      Multimapping reads : counted                                          ||
+|| Multi-overlapping reads : counted                                          ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+||          Chimeric reads : counted                                          ||
+||        Both ends mapped : not required                                     ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file /home/sf040090/Li-2017-hFGC/genomefiles/UCSChg38- ... ||
+||    Features : 6852710                                                      ||
+||    Meta-features : 213257                                                  ||
+||    Chromosomes/contigs : 455                                               ||
+||                                                                            ||
+|| Process SAM file 27_aligned.sortedbycoord.f2.bam...                        ||
+||    Paired-end reads are included.                                          ||
+||    Assign fragments (read pairs) to features...                            ||
+||                                                                            ||
+||    WARNING: reads from the same pair were found not adjacent to each       ||
+||             other in the input (due to read sorting by location or         ||
+||             reporting of multi-mapping read pairs).                        ||
+||                                                                            ||
+||    Read re-ordering is performed.                                          ||
+||                                                                            ||
+||    Total fragments : 53512356                                              ||
+||    Successfully assigned fragments : 48656781 (90.9%)                      ||
+||    Running time : 33.58 minutes                                            ||
+||                                                                            ||
+||                         Read assignment finished.                          ||
+||                                                                            ||
+|| Summary of counting results can be found in file "27_genes_assigned.summa  ||
+|| ry"                                                                        ||
+||                                                                            ||
+\\===================== http://subread.sourceforge.net/ ======================//
