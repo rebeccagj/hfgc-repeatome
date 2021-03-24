@@ -1,0 +1,14 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# pthread_getattr_np
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# pthread_getattr_np
+Error occurred during initialization of VM
+Unable to allocate 494144KB bitmaps for parallel garbage collection for the requested 15812608KB heap.
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# pthread_getattr_np
+Error occurred during initialization of VM
+Unable to allocate 494144KB bitmaps for parallel garbage collection for the requested 15812608KB heap.
+20180312-bbduk done

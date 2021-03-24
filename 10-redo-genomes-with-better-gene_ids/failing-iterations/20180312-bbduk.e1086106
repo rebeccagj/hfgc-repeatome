@@ -1,0 +1,76 @@
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/25_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/25_#_clean.fastq.gz qtrim=rl trimq=10
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f0fe4009b90 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f0fe4019410 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f0fe40093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f0fe40093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f0fe40098a0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f0fe4009f40 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f0fe40090c0 ***
+*** glibc detected *** java: free(): invalid pointer: 0x00007f0fe4013070 ***
+*** glibc detected *** java: double free or corruption (!prev): 0x00007f0fe4019c30 ***
+/home/sf040090/software/bbmap/bbduk.sh: line 342: 445711 Aborted                 java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/25_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/25_#_clean.fastq.gz qtrim=rl trimq=10
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/26_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/26_#_clean.fastq.gz qtrim=rl trimq=10
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128009820 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc1280093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc1280093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128009e40 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128009a90 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128013a60 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128009be0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128012370 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128009d60 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc1280125d0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128012470 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128009820 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128018dc0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc1280124e0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fc128009480 ***
+*** glibc detected *** java: double free or corruption (!prev): 0x00007fc128019c30 ***
+/home/sf040090/software/bbmap/bbduk.sh: line 342: 445770 Aborted                 java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/26_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/26_#_clean.fastq.gz qtrim=rl trimq=10
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/27_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/27_#_clean.fastq.gz qtrim=rl trimq=10
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba40093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba40093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba40093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba4009a10 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba4009e40 ***
+*** glibc detected *** java: free(): invalid pointer: 0x00007f2ba40129e0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba40093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba4009820 ***
+*** glibc detected *** java: free(): invalid pointer: 0x00007f2ba40129e0 ***
+*** glibc detected *** java: free(): invalid pointer: 0x00007f2ba40129e0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba4009e40 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba4009820 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f2ba40097b0 ***
+/home/sf040090/software/bbmap/bbduk.sh: line 342: 445825 Aborted                 java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/27_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/27_#_clean.fastq.gz qtrim=rl trimq=10
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/28_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/28_#_clean.fastq.gz qtrim=rl trimq=10
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fa1280097b0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fa1280093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fa1280098a0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fa1280093a0 ***
+*** glibc detected *** java: double free or corruption (!prev): 0x00007fa128019c30 ***
+/home/sf040090/software/bbmap/bbduk.sh: line 342: 445868 Aborted                 java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/28_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/28_#_clean.fastq.gz qtrim=rl trimq=10
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/29_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/29_#_clean.fastq.gz qtrim=rl trimq=10
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fbadc009be0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fbadc0093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fbadc0098a0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fbadc009760 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fbadc012b90 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fbadc0123e0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fbadc0093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fbadc0093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007fbadc009be0 ***
+/home/sf040090/software/bbmap/bbduk.sh: line 342: 445931 Aborted                 java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/29_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/29_#_clean.fastq.gz qtrim=rl trimq=10
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/30_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/30_#_clean.fastq.gz qtrim=rl trimq=10
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f6898009fb0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f6898012a10 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f68980093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f6898009a90 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f68980093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f6898012e50 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f68980139a0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f68980093f0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f6898009ec0 ***
+*** glibc detected *** java: double free or corruption (fasttop): 0x00007f6898012e50 ***
+*** glibc detected *** java: double free or corruption (!prev): 0x00007f6898019c30 ***
+*** glibc detected *** java: double free or corruption (!prev): 0x00007f6898019c30 ***
+/home/sf040090/software/bbmap/bbduk.sh: line 342: 445972 Aborted                 java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/30_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/30_#_clean.fastq.gz qtrim=rl trimq=10

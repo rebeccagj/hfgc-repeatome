@@ -1,0 +1,12 @@
+
+genomeGenerate.cpp:167:genomeGenerate: exiting because of *OUTPUT FILE* error: could not create output file /scratch/sf040090/genomes20180307/transcriptome_hg38_150overhang/chrName.txt
+Solution: check that the path exists and you have write permission for this file
+
+Mar 08 09:46:41 ...... FATAL ERROR, exiting
+cp: cannot stat `/scratch/sf040090/Log.out': No such file or directory
+
+genomeGenerate.cpp:167:genomeGenerate: exiting because of *OUTPUT FILE* error: could not create output file /scratch/sf040090/genomes20180307/transposonome_hg38_150overhang/chrName.txt
+Solution: check that the path exists and you have write permission for this file
+
+Mar 08 09:48:04 ...... FATAL ERROR, exiting
+cp: cannot stat `/scratch/sf040090/Log.out': No such file or directory

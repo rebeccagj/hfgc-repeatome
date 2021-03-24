@@ -1,0 +1,23 @@
+$ /home/sf040090/software/bbmap/bbduk.sh -Xmx15g \
+> in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/27_#_extracted.fastq.gz \
+> out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/27_#_clean.fastq.gz \
+> qtrim=rl trimq=10
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx15g -Xms15g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx15g in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/27_#_extracted.fastq.gz out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/27_#_clean.fastq.gz qtrim=rl trimq=10
+Executing jgi.BBDukF [-Xmx15g, in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/27_#_extracted.fastq.gz, out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/27_#_clean.fastq.gz, qtrim=rl, trimq=10]
+Version 37.90 [-Xmx15g, in=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wextract/27_#_extracted.fastq.gz, out=/home/sf040090/Li-2017-hFGC/fastq/male/19W/19Wclean/27_#_clean.fastq.gz, qtrim=rl, trimq=10]
+
+Initial:
+Memory: max=15435m, free=15112m, used=323m
+
+Input is being processed as paired
+Started output streams:	 0.145 seconds.
+Processing time:   	       1211.016 seconds.
+
+Input:                         176510372 reads		25064472824 bases.
+QTrimmed:                      34483755 reads (19.54%) 	808155296 bases (3.22%)
+Total Removed:                 1450 reads (0.00%) 	808155296 bases (3.22%)
+Result:                        176508922 reads (100.00%) 	  24256317528 bases (96.78%)
+
+Time:   		       		       1211.181 seconds.
+Reads Processed:        176m 		       145.73k reads/sec
+Bases Processed:      25064m 		       20.69m bases/sec

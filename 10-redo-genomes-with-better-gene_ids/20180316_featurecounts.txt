@@ -1,0 +1,97 @@
+ cd /home/sf040090/Li-2017-hFGC/cln_txn_19W/25transcriptome
+
+
+# /home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/ensemblGRCh38_r91.gtf -o 25_genes_assigned -R BAM 25_txn_aligned.sortedbycoord.f2.bam -T 8  
+
+# Successfully assigned reads : 8532952 (34.2%) because forgot to tell it paired
+
+
+
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/ensemblGRCh38_r91.gtf -o 25_genes_assigned -R BAM 25_txn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_name
+
+# Successfully assigned fragments : 5033457 (40.3%)
+
+cat 25_genes_assigned.summary
+
+
+
+cd ../26transcriptome
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/ensemblGRCh38_r91.gtf -o 26_genes_assigned -R BAM 26_txn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_name
+
+# Successfully assigned fragments : 7660125 (62.3%)
+
+# Features : 1199851
+
+# Meta-features : 56655
+# Chromosomes/contigs : 47  
+
+cat 26_genes_assigned.summary
+
+
+
+cd ../27transcriptome
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts \
+
+-a /home/sf040090/Li-2017-hFGC/genomefiles/ensemblGRCh38_r91.gtf \
+
+-o 27_genes_assigned -R BAM 27_txn_aligned.sortedbycoord.f2.bam \
+
+-T 8 -p -g gene_name
+
+# Successfully assigned fragments : 12419191 (55.3%)
+
+cat 27_genes_assigned.summary
+
+
+
+cd ../28transcriptome
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/ensemblGRCh38_r91.gtf -o 28_genes_assigned -R BAM 28_txn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_name
+# Successfully assigned fragments : 7319398 (61.7%)
+cat 28_genes_assigned.summary
+
+cd ../29transcriptome/
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/ensemblGRCh38_r91.gtf -o 29_genes_assigned -R BAM 29_txn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_name
+# Successfully assigned fragments : 13258406 (54.0%)
+cat 29_genes_assigned.summary
+
+
+cd ../30transcriptome/
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/ensemblGRCh38_r91.gtf -o 30_genes_assigned -R BAM 30_txn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_name
+# Successfully assigned fragments : 5178014 (43.4%)
+cat 30_genes_assigned.summary
+
+cd /home/sf040090/Li-2017-hFGC/cln_tspn_19W/25transposonome
+# /home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/hg38_UCSC_repeatmasker_noSR_sorted.gtf -o 25_tspn_assigned -R BAM 25_tspn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_name
+# Successfully assigned fragments : 6047804 (16.1%)
+# loses multi-mappers, add in -MO
+# /home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/hg38_UCSC_repeatmasker_noSR_sorted.gtf -o 25_tspn_assigned -R BAM 25_tspn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_name
+# Successfully assigned fragments : 21234850 (56.5%) but Meta-features:1 so that's weird; after interrogating the file, "gene_name" should be "gene -id"; still need to add in MO
+
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/hg38_UCSC_repeatmasker_noSR_sorted.gtf -o 25_tspn_assigned -R BAM 25_tspn_aligned.sortedbycoord.f2.bamM -T 8 -p -g gene_id -MO
+# Successfully assigned fragments : 21234850 (56.5%)  
+cat 25_tspn_assigned.summary
+
+cd ../26transposonome/
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/hg38_UCSC_repeatmasker_noSR_sorted.gtf -o 26_tspn_assigned -R BAM 26_tspn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_id -MO
+# Successfully assigned fragments : 13281408 (43.6%) 
+cat 26_tspn_assigned.summary
+
+cd ../27transposonome/
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/hg38_UCSC_repeatmasker_noSR_sorted.gtf -o 27_tspn_assigned -R BAM 27_tspn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_id -MO
+# Successfully assigned fragments : 26334671 (48.6%)
+cat 27_tspn_assigned.summary
+
+cd ../28transposonome/
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/hg38_UCSC_repeatmasker_noSR_sorted.gtf -o 28_tspn_assigned -R BAM 28_tspn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_id -MO
+# Successfully assigned fragments : 12360749 (43.6%)
+cat 28_tspn_assigned.summary
+
+cd ../29transposonome/
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/hg38_UCSC_repeatmasker_noSR_sorted.gtf -o 29_tspn_assigned -R BAM 29_tspn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_id -MO
+# Successfully assigned fragments : 28708577 (49.1%)
+cat 29_tspn_assigned.summary
+
+cd ../30transposonome/
+/home/sf040090/software/subread-1.6.0-source/bin/featureCounts -a /home/sf040090/Li-2017-hFGC/genomefiles/hg38_UCSC_repeatmasker_noSR_sorted.gtf -o 30_tspn_assigned -R BAM 30_tspn_aligned.sortedbycoord.f2.bam -T 8 -p -g gene_id -MO
+# Successfully assigned fragments : 19041101 (52.0%)
+cat 30_tspn_assigned.summary

@@ -1,0 +1,5 @@
+
+EXITING because of FATAL ERROR: cannot insert junctions on the fly because of strand GstrandBit problem
+SOLUTION: please contact STAR author at https://groups.google.com/forum/#!forum/rna-star
+
+Mar 09 01:11:53 ...... FATAL ERROR, exiting
