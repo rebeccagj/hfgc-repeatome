@@ -1,0 +1,59 @@
+cd /Users/Rebecca/Documents/Graduate_School/Laird_Lab/Experiments/RJ31-LiLi_et_al_2017-HFGC_TE-alignment/9-Ranalysis/genebycell_19W/
+
+cat 25tspn_counts.tsv | head -5
+# still has stupid commas
+# realized there are overlappers in ? can probably kick them out bioinformatically
+# could could just awk/grep out the comma lines and keep only the 1242 single transposons!
+
+awk '!/,/' 25tspn_counts.tsv > 25tspn_counts_nooverlap.tsv
+cat 25tspn_counts_nooverlap.tsv 25txn_counts.tsv > 25_tspntxn.tsv
+
+# then edited out the extra gene and cell ID headers in 25_tspntxn.tsv that are in the middle resulting from cat'ing in the the txn file 
+# can use emacs or a text editor to do this
+
+grep "gene" 25_tspntxn.tsv #tests that there is only one true header line
+
+awk '!/,/' 26tspn_counts.tsv > 26tspn_counts_nooverlap.tsv
+cat 26tspn_counts_nooverlap.tsv 26txn_counts.tsv > 26_tspntxn.tsv
+
+awk '!/,/' 27tspn_counts.tsv > 27tspn_counts_nooverlap.tsv
+cat 27tspn_counts_nooverlap.tsv 27txn_counts.tsv > 27_tspntxn.tsv
+
+awk '!/,/' 28tspn_counts.tsv > 28tspn_counts_nooverlap.tsv
+cat 28tspn_counts_nooverlap.tsv 28txn_counts.tsv > 28_tspntxn.tsv
+
+awk '!/,/' 29tspn_counts.tsv > 29tspn_counts_nooverlap.tsv
+cat 29tspn_counts_nooverlap.tsv 29txn_counts.tsv > 29_tspntxn.tsv
+
+awk '!/,/' 30tspn_counts.tsv > 30tspn_counts_nooverlap.tsv
+cat 30tspn_counts_nooverlap.tsv 30txn_counts.tsv > 30_tspntxn.tsv
+
+# when I tried to read the files into R, I get this error: 
+# Error in read.table("25_tspntxn.tsv") : duplicate 'row.names' are not allowed
+
+cat 25_tspntxn.tsv | awk '{print $1}' | sort | uniq -d
+# 7SK
+# MSR1
+# by chance these two genes are annotated in both the tspn and txn gene sets
+# changing the first occurrence of both (from the tspn set) to append _tn
+
+# for some reason merging data.frames in R is taking forever
+# doing it in bash
+
+# sorts cat'd tsp/txn files by gene name
+sort -k1 -n 25_tspntxn.tsv > 25_tspntxn_sort.tsv 
+sort -k1 -n 26_tspntxn.tsv > 26_tspntxn_sort.tsv 
+sort -k1 -n 27_tspntxn.tsv > 27_tspntxn_sort.tsv 
+sort -k1 -n 28_tspntxn.tsv > 28_tspntxn_sort.tsv 
+sort -k1 -n 29_tspntxn.tsv > 29_tspntxn_sort.tsv 
+sort -k1 -n 30_tspntxn.tsv > 30_tspntxn_sort.tsv
+
+# renames sorted file bc long file names are starting to give me hives
+mv 25_tspntxn_sort.tsv 25_tspntxn.tsv 
+mv 26_tspntxn_sort.tsv 26_tspntxn.tsv 
+mv 27_tspntxn_sort.tsv 27_tspntxn.tsv 
+mv 28_tspntxn_sort.tsv 28_tspntxn.tsv 
+mv 29_tspntxn_sort.tsv 29_tspntxn.tsv 
+mv 30_tspntxn_sort.tsv 30_tspntxn.tsv 
+
+# move gene row back up to the top in a text editor

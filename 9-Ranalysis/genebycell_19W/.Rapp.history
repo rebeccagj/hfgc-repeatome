@@ -1,0 +1,33 @@
+setwd("/Users/Rebecca/Documents/Graduate_School/Laird_Lab/Experiments/RJ31-LiLi_et_al_2017-HFGC_TE-alignment/9-Ranalysis/genebycell_19W/old/") #set wd to directory with UMI_Tools tsv file outputs
+readrenamecol = function(arg1, arg2, arg3){
+setwd("/Users/Rebecca/Documents/Graduate_School/Laird_Lab/Experiments/RJ31-LiLi_et_al_2017-HFGC_TE-alignment/9-Ranalysis/genebycell_19W/old/") #set wd to directory with UMI_Tools tsv file outputs#
+#
+readrenamecol = function(arg1, arg2, arg3){#
+  arg1 = read.delim(file = arg2, header = T, sep = "\t", row.names = 1)#
+  colnames(arg1)[1:ncol(arg1)] = paste(colnames(arg1)[1:ncol(arg1)], arg3, sep = "_")#
+  return(arg1)#
+} #function for inputting data, appending column name with SRR ID number, and assigning to global environment
+readrenamecol = function(arg1, arg2, arg3){#
+  arg1 = read.delim(file = arg2, header = T, sep = "\t", row.names = 1)#
+  colnames(arg1)[1:ncol(arg1)] = paste(colnames(arg1)[1:ncol(arg1)], arg3, sep = "_")#
+  return(arg1)#
+} #function for inputting data, appending column name with SRR ID number, and assigning to global environment
+cmncol = read.table("old/commongenes.txt", row.names = 1)
+setwd("/Users/Rebecca/Documents/Graduate_School/Laird_Lab/Experiments/RJ31-LiLi_et_al_2017-HFGC_TE-alignment/9-Ranalysis/genebycell_19W/both/") #set wd to directory with UMI_Tools tsv file outputs#
+#
+readrenamecol = function(arg1, arg2, arg3){#
+  arg1 = read.delim(file = arg2, header = T, sep = "\t", row.names = 1)#
+  colnames(arg1)[1:ncol(arg1)] = paste(colnames(arg1)[1:ncol(arg1)], arg3, sep = "_")#
+  return(arg1)#
+} #function for inputting data, appending column name with SRR ID number, and assigning to global environment
+cmncol = read.table("old/commongenes.txt", row.names = 1)
+cmncol = read.table("old/commongenes.txt", row.names = 1)
+ls()
+counts25 = readrenamecol(counts25, "25_tspntxn.tsv", "25")
+setwd("/Users/Rebecca/Documents/Graduate_School/Laird_Lab/Experiments/RJ31-LiLi_et_al_2017-HFGC_TE-alignment/9-Ranalysis/") #set wd to directory with UMI_Tools tsv file outputs
+cmncol = read.table("genebycell_19W/both/old/commongene.txt", row.names = 1)
+cmncol = read.table("/genebycell_19W/both/old/commongene.txt", row.names = 1)
+setwd("/Users/Rebecca/Documents/Graduate_School/Laird_Lab/Experiments/RJ31-LiLi_et_al_2017-HFGC_TE-alignment/9-Ranalysis/genebycell_19W") #set wd to directory with UMI_Tools tsv file outputs
+cmncol = read.table("/genebycell_19W/both/old/commongene.txt", row.names = 1)
+cmncol = read.table("/both/old/commongene.txt", row.names = 1)
+counts25 = readrenamecol(counts25, "/both/old/25_tspntxn.tsv", "25")

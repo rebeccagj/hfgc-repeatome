@@ -1,0 +1,8 @@
+setwd("/Users/Rebecca/Documents/Graduate_School/Laird_Lab/Experiments/RJ31-LiLi_et_al_2017-HFGC_TE-alignment/9-Ranalysis/genebycell_19W/old/") #set wd to directory with UMI_Tools tsv file outputs
+getwd()
+readrenamecol = function(arg1, arg2, arg3){
+readrenamecol = function(arg1, arg2, arg3){#
+  arg1 = read.delim(file = arg2, header = T, sep = "\t", row.names = 1)#
+  colnames(arg1)[1:ncol(arg1)] = paste(colnames(arg1)[1:ncol(arg1)], arg3, sep = "_")#
+  return(arg1)#
+} #function for inputting data, appending column name with SRR ID number, and assigning to global environment
