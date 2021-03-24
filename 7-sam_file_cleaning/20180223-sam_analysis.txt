@@ -1,0 +1,154 @@
+module load CBC
+module load samtools
+samtools view Aligned.sortedByCoord.out.bam | head -n10
+samtools view Aligned.sortedByCoord.out.bam | cut -f 2 | sort | uniq -c # takes all the FLAG scores from column 2, sorts them descending, condenses dupes with dupe count
+
+BEGINCOMMENT
+example of 25
+as you can see below, there are several unmated pairs. this was really throwing star for a loop until i forced "too short" reads to map
+to throw out:
+11401753	73 - paired read, read 1 mapped, mate in read 2 unmapped
+ 7676685	89 - paired read, read 1 mapped, mate in read 2 unmapped, rev strand DNA
+  974594	137 - paired read, read 2 mapped, mate in read 1 unmapped
+  671654	153 - paired read, read 2 mapped, mate in read 1 unmapped, rev strand DNA
+ 3493744	329 - paired read, read 1 mapped, mate in read 2 unmapped, multimapper
+ 1988397	345 - paired read, read 1 mapped, mate in read 2 unmapped, rev strand DNA, multimapper
+ 1408751	393 - paired read, read 2 mapped, mate in read 1 unmapped, multimapper
+ 1297006	409 - paired read, read 2 mapped, mate in read 1 unmapped, rev strand DNA, multimapper
+28912584	total
+
+to keep
+ 9653394	83 - paired read, mapped in proper pair, rev strand DNA, read 1, primary alignment
+ 9653394	163 - paired read, mapped in proper pair, fwd strand DNA, read 2, primary alignment
+ 9654150	99 - paired read, mapped in proper pair, fwd strand DNA, read 1, primary alignment
+ 9654150	147 - paired read, mapped in proper pair, rev strand DNA, read 2, primary alignment
+10313399	339 - paired read, mapped in proper pair, rev strand DNA, read 1, multimapper
+ 7712128	355 - paired read, mapped in proper pair, fwd strand DNA, read 1, multimapper
+ 7712128	403 - paired read, mapped in proper pair, rev strand DNA, read 2, multimapper
+10313399	419 - paired read, mapped in proper pair, fwd strand DNA, read 2, multimapper
+74666142	total
+ENDCOMMENT
+
+cp Aligned.sortedByCoord.out.bam 25_Aligned.sortedByCoord.out.bam # renames for future distinguishing between other fastq sets
+samtools view -hf 2 25_Aligned.sortedByCoord.out.bam > 25_aligned.sortedbycoord.f2.bam # h necessary to keep header in, f keeps only reads which include flag # 2 (mapped in proper pair)
+# future directions - take f2 file and analyze for retrotransposon expression
+# note that multi-mappers are kept!!!!! and future qc for non-transposon data might be good to remove multi-mappers (e.g., -Fh 100)
+
+BEGINCOMMENT
+26 Flags
+to throw out:
+14855479 73
+12733178 89
+ 503626 137
+ 206596 153
+5485812 329
+2610321 345
+ 475766 393
+ 375432 409
+
+to keep:
+7853069 83
+7853069 163
+7558197 99
+7558197 147
+9706255 339
+5272534 355
+5272534 403
+9706255 419
+ENDCOMMENT
+samtools view -hf 2 Aligned.sortedByCoord.out.bam > 26_aligned.sortedbycoord.f2.bam
+
+BEGINCOMMENT
+27 Flags
+to throw out:
+32318157 73
+23093000 89
+ 995325 137
+ 432719 153
+11317197 329
+4651897 345
+ 983636 393
+ 786878 409
+
+to keep:
+13876059 83
+13876059 163
+14231869 99
+14231869 147
+15558009 339
+9846419 355
+9846419 403
+15558009 419
+ENDCOMMENT
+samtools view -hf 2 Aligned.sortedByCoord.out.bam > 27_aligned.sortedbycoord.f2.bam
+
+BEGINCOMMENT
+28 Flags
+to throw out:
+15105425 73
+12863902 89
+ 533475 137
+ 195169 153
+6184944 329
+2636090 345
+ 460579 393
+ 349103 409
+
+to keep:
+7408640 83
+7408640 163
+7179681 99
+7179681 147
+8714883 339
+4907193 355
+4907193 403
+8714883 419
+ENDCOMMENT
+samtools view -hf 2 Aligned.sortedByCoord.out.bam > 28_aligned.sortedbycoord.f2.bam
+
+BEGINCOMMENT
+29 Flags
+to throw out:
+35082963 73
+25372987 89
+1059402 137
+ 443004 153
+12286595 329
+5394142 345
+1009591 393
+ 803795 409
+
+to keep:
+15279235 83
+15279235 163
+15501921 99
+15501921 147
+16010681 339
+10559754 355
+10559754 403
+16010681 419
+ENDCOMMENT
+
+BEGINCOMMENT
+30 Flags
+to throw out:
+13022772 73
+9178819 89
+ 832925 137
+ 517422 153
+3227055 329
+2824307 345
+1102164 393
+ 996795 409
+
+to keep:
+9425618 83
+9425618 163
+8968996 99
+8968996 147
+11193661 339
+6712633 355
+6712633 403
+11193661 419
+ENDCOMMENT
+samtools view -hf 2 Aligned.sortedByCoord.out.bam > 30_aligned.sortedbycoord.f2.bam
