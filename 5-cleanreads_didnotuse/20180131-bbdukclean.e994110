@@ -1,0 +1,115 @@
+mkdir: cannot create directory `/scratch/sf040090/clean': File exists
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx10g -Xms10g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx10g in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199325_1.fastq.gz in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199325_2.fastq.gz out1=/scratch/sf040090/clean/25_1_clean.fastq.gz out2=/scratch/sf040090/clean/25_2_clean.fastq.gz qtrim=rl trimq=10
+Executing jgi.BBDukF [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199325_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199325_2.fastq.gz, out1=/scratch/sf040090/clean/25_1_clean.fastq.gz, out2=/scratch/sf040090/clean/25_2_clean.fastq.gz, qtrim=rl, trimq=10]
+Version 37.89 [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199325_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199325_2.fastq.gz, out1=/scratch/sf040090/clean/25_1_clean.fastq.gz, out2=/scratch/sf040090/clean/25_2_clean.fastq.gz, qtrim=rl, trimq=10]
+
+Initial:
+Memory: max=10290m, free=10075m, used=215m
+
+Input is being processed as paired
+Started output streams:	0.050 seconds.
+Processing time:   		581.960 seconds.
+
+Input:                  	96134814 reads 		14420222100 bases.
+QTrimmed:               	16713827 reads (17.39%) 	443215654 bases (3.07%)
+Total Removed:          	186 reads (0.00%) 	443215654 bases (3.07%)
+Result:                 	96134628 reads (100.00%) 	13977006446 bases (96.93%)
+
+Time:   			582.037 seconds.
+Reads Processed:      96134k 	165.17k reads/sec
+Bases Processed:      14420m 	24.78m bases/sec
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx10g -Xms10g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx10g in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199326_1.fastq.gz in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199326_2.fastq.gz out1=/scratch/sf040090/clean/26_1_clean.fastq.gz out2=/scratch/sf040090/clean/26_2_clean.fastq.gz qtrim=rl trimq=10
+Executing jgi.BBDukF [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199326_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199326_2.fastq.gz, out1=/scratch/sf040090/clean/26_1_clean.fastq.gz, out2=/scratch/sf040090/clean/26_2_clean.fastq.gz, qtrim=rl, trimq=10]
+Version 37.89 [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199326_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199326_2.fastq.gz, out1=/scratch/sf040090/clean/26_1_clean.fastq.gz, out2=/scratch/sf040090/clean/26_2_clean.fastq.gz, qtrim=rl, trimq=10]
+
+Initial:
+Memory: max=10290m, free=10075m, used=215m
+
+Input is being processed as paired
+Started output streams:	0.284 seconds.
+Processing time:   		622.452 seconds.
+
+Input:                  	102751702 reads 		15412755300 bases.
+QTrimmed:               	17707944 reads (17.23%) 	484434615 bases (3.14%)
+Total Removed:          	622 reads (0.00%) 	484434615 bases (3.14%)
+Result:                 	102751080 reads (100.00%) 	14928320685 bases (96.86%)
+
+Time:   			622.756 seconds.
+Reads Processed:        102m 	165.00k reads/sec
+Bases Processed:      15412m 	24.75m bases/sec
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx10g -Xms10g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx10g in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199327_1.fastq.gz in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199327_2.fastq.gz out1=/scratch/sf040090/clean/27_1_clean.fastq.gz out2=/scratch/sf040090/clean/27_2_clean.fastq.gz qtrim=rl trimq=10
+Executing jgi.BBDukF [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199327_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199327_2.fastq.gz, out1=/scratch/sf040090/clean/27_1_clean.fastq.gz, out2=/scratch/sf040090/clean/27_2_clean.fastq.gz, qtrim=rl, trimq=10]
+Version 37.89 [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199327_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199327_2.fastq.gz, out1=/scratch/sf040090/clean/27_1_clean.fastq.gz, out2=/scratch/sf040090/clean/27_2_clean.fastq.gz, qtrim=rl, trimq=10]
+
+Initial:
+Memory: max=10290m, free=10075m, used=215m
+
+Input is being processed as paired
+Started output streams:	0.089 seconds.
+Processing time:   		1230.502 seconds.
+
+Input:                  	200593204 reads 		30088980600 bases.
+QTrimmed:               	34590375 reads (17.24%) 	929712867 bases (3.09%)
+Total Removed:          	694 reads (0.00%) 	929712867 bases (3.09%)
+Result:                 	200592510 reads (100.00%) 	29159267733 bases (96.91%)
+
+Time:   			1230.611 seconds.
+Reads Processed:        200m 	163.00k reads/sec
+Bases Processed:      30088m 	24.45m bases/sec
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx10g -Xms10g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx10g in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199328_1.fastq.gz in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199328_2.fastq.gz out1=/scratch/sf040090/clean/28_1_clean.fastq.gz out2=/scratch/sf040090/clean/28_2_clean.fastq.gz qtrim=rl trimq=10
+Executing jgi.BBDukF [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199328_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199328_2.fastq.gz, out1=/scratch/sf040090/clean/28_1_clean.fastq.gz, out2=/scratch/sf040090/clean/28_2_clean.fastq.gz, qtrim=rl, trimq=10]
+Version 37.89 [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199328_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199328_2.fastq.gz, out1=/scratch/sf040090/clean/28_1_clean.fastq.gz, out2=/scratch/sf040090/clean/28_2_clean.fastq.gz, qtrim=rl, trimq=10]
+
+Initial:
+Memory: max=10290m, free=10075m, used=215m
+
+Input is being processed as paired
+Started output streams:	0.323 seconds.
+Processing time:   		655.935 seconds.
+
+Input:                  	101850572 reads 		15277585800 bases.
+QTrimmed:               	16872795 reads (16.57%) 	446083291 bases (2.92%)
+Total Removed:          	520 reads (0.00%) 	446083291 bases (2.92%)
+Result:                 	101850052 reads (100.00%) 	14831502509 bases (97.08%)
+
+Time:   			656.278 seconds.
+Reads Processed:        101m 	155.19k reads/sec
+Bases Processed:      15277m 	23.28m bases/sec
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx10g -Xms10g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx10g in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199329_1.fastq.gz in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199329_2.fastq.gz out1=/scratch/sf040090/clean/29_1_clean.fastq.gz out2=/scratch/sf040090/clean/29_2_clean.fastq.gz qtrim=rl trimq=10
+Executing jgi.BBDukF [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199329_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199329_2.fastq.gz, out1=/scratch/sf040090/clean/29_1_clean.fastq.gz, out2=/scratch/sf040090/clean/29_2_clean.fastq.gz, qtrim=rl, trimq=10]
+Version 37.89 [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199329_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199329_2.fastq.gz, out1=/scratch/sf040090/clean/29_1_clean.fastq.gz, out2=/scratch/sf040090/clean/29_2_clean.fastq.gz, qtrim=rl, trimq=10]
+
+Initial:
+Memory: max=10290m, free=10075m, used=215m
+
+Input is being processed as paired
+Started output streams:	0.323 seconds.
+Processing time:   		1325.334 seconds.
+
+Input:                  	214411808 reads 		32161771200 bases.
+QTrimmed:               	34979823 reads (16.31%) 	915202317 bases (2.85%)
+Total Removed:          	688 reads (0.00%) 	915202317 bases (2.85%)
+Result:                 	214411120 reads (100.00%) 	31246568883 bases (97.15%)
+
+Time:   			1325.676 seconds.
+Reads Processed:        214m 	161.74k reads/sec
+Bases Processed:      32161m 	24.26m bases/sec
+java -Djava.library.path=/home/sf040090/software/bbmap/jni/ -ea -Xmx10g -Xms10g -cp /home/sf040090/software/bbmap/current/ jgi.BBDukF -Xmx10g in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199330_1.fastq.gz in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199330_2.fastq.gz out1=/scratch/sf040090/clean/30_1_clean.fastq.gz out2=/scratch/sf040090/clean/30_2_clean.fastq.gz qtrim=rl trimq=10
+Executing jgi.BBDukF [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199330_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199330_2.fastq.gz, out1=/scratch/sf040090/clean/30_1_clean.fastq.gz, out2=/scratch/sf040090/clean/30_2_clean.fastq.gz, qtrim=rl, trimq=10]
+Version 37.89 [-Xmx10g, in1=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199330_1.fastq.gz, in2=/home/sf040090/Li-2017-hFGC/fastq/male/19W/SRR4199330_2.fastq.gz, out1=/scratch/sf040090/clean/30_1_clean.fastq.gz, out2=/scratch/sf040090/clean/30_2_clean.fastq.gz, qtrim=rl, trimq=10]
+
+Initial:
+Memory: max=10290m, free=10075m, used=215m
+
+Input is being processed as paired
+Started output streams:	0.102 seconds.
+Processing time:   		639.350 seconds.
+
+Input:                  	102017576 reads 		15302636400 bases.
+QTrimmed:               	18186360 reads (17.83%) 	499271976 bases (3.26%)
+Total Removed:          	600 reads (0.00%) 	499271976 bases (3.26%)
+Result:                 	102016976 reads (100.00%) 	14803364424 bases (96.74%)
+
+Time:   			639.471 seconds.
+Reads Processed:        102m 	159.53k reads/sec
+Bases Processed:      15302m 	23.93m bases/sec
